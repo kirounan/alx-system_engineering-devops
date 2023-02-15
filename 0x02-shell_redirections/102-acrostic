@@ -1,2 +1,2 @@
 #!/bin/bash
-cut -c-1 test.txt | tr -d $'\n' | pr -td
+cut -c-1 test.txt | tr -d $'\n' | pr -t
