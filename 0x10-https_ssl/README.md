@@ -1,1 +1,1 @@
-https secured http and ssl tasks
+https secure http and ssl tasks
