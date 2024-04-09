@@ -1,34 +1,33 @@
-# 0x19. Postmortem
-*************************
-Using one of the web stack debugging project issue or an outage you have personally face, write a postmortem. Most of you will never have faced an outage, so just get creative and invent your own :)
+# Postmortem
 
-# Requirements:
+Learning how to write an Incident Report, also referred to as a Postmortem. This postmortem follows the guidelines used closely by google engineers to file reports. The report is made up of five parts, an issue summary, a timeline, root cause analysis, resolution and recovery, and lastly, corrective and preventative measures. Lets review each of these parts in detail.
 
-### Issue Summary (that is often what executives will read) must contain:
+### Issue Summary
 
-duration of the outage with start and end times (including timezone)
-what was the impact (what service was down/slow? What were user experiencing? How many % of the users were affected?)
-what was the root cause
+- short summary (5 sentences)
+- list the duration along with start and end times (include timezone)
+- state the impact (most user requests resulted in 500 errors, at peak 100%)
+- close with root cause
 
-### Timeline (format bullet point, format: time - keep it short, 1 or 2 sentences) must contain:
+### Timeline
 
-when was the issue detected
-how was the issue detected (monitoring alert, an engineer noticed something, a customer complained…)
-actions taken (what parts of the system were investigated, what were the assumption on the root cause of the issue)
-misleading investigation/debugging paths that were taken
-which team/individuals was the incident escalated to
-how the incident was resolved
+- list the timezone
+- covers the outage duration
+- when outage began
+- when staff was notified
+- actions, events, …
+- when service was restored
 
-### Root cause and resolution must contain:
+### Root Cause
 
-explain in detail what was causing the issue
-explain in detail how the issue was fixed
+- give a detailed explanation of event
+- do not sugarcoat
 
-### Corrective and preventative measures must contain:
+### Resolution and recovery
 
-what are the things that can be improved/fixed (broadly speaking)
-a list of tasks to address the issue (be very specific, like a TODO, example: patch Nginx server, add monitoring on server memory…)
+- give detailed explanation of actions taken (includes times)
 
-### Be brief and straight to the point, between 400 to 600 words
+### Corrective and Preventative Measures
 
-While postmortem format can vary, but stick to this one for this project. 
+- itemized list of ways to prevent it from happening again
+- what can we do better next time?
